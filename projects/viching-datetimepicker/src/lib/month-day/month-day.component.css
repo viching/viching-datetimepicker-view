@@ -1,0 +1,66 @@
+table * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.month-day{
+  padding: 0;
+  margin: 0 auto;
+  border-spacing: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.month-day-tr{
+  height: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.month-day-tr .month-day-col{
+  width: 38px;
+  height: 35px;
+  font-size: 12px;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+}
+
+.month-day-head{
+  text-align: center;
+}
+
+.month-day-inner{
+  margin: 0 auto;
+  width: 90%;
+  height: 90%;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-color: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.month-day-inner:hover{
+  border: 1px solid #c2c2c2;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.month-active{
+  background-color: #3f51b5!important;
+  color: #fff!important;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px #fff;
+}
+
+.month-current{
+  border: 0 none;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+

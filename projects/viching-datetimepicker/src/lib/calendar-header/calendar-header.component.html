@@ -1,0 +1,26 @@
+<!--<div class="calendar-top">
+  <span >{{local.year}}</span>
+  <span *ngIf="local.type == 'month' || local.type == 'date' || local.type == 'datetime'">-</span>
+  <span *ngIf="local.type == 'month' || local.type == 'date' || local.type == 'datetime'">{{local.month + 1 | pad}}</span>
+  <span *ngIf="local.type == 'date' || local.type == 'datetime'">-</span>
+  <span *ngIf="local.type == 'date' || local.type == 'datetime'" [innerText]="local.date | pad"></span>
+  <span *ngIf="local.type == 'datetime'">&nbsp;</span>
+  <span *ngIf="local.type == 'datetime'">{{local.hour | pad}}</span>
+  <span *ngIf="local.type == 'datetime'">:</span>
+  <span *ngIf="local.type == 'datetime'">{{local.minute | pad}}</span>
+  <span *ngIf="local.type == 'datetime'">:</span>
+  <span *ngIf="local.type == 'datetime'">{{local.second | pad}}</span>
+</div>-->
+<div class="calendar-header">
+  <div class="pre" (click)="pre()">
+    <mat-icon>keyboard_arrow_left</mat-icon>
+  </div>
+  <div class="view">
+    <span class="vi-year" (click)="selectType('year')">{{local.year}}</span>
+    <span class="vi-line" (click)="selectType('month')" *ngIf="local.type == 'date' || local.type == 'datetime'">-</span>
+    <span class="vi-month" (click)="selectType('month')" *ngIf="local.type == 'date' || local.type == 'datetime'">{{local.month + 1 | pad}}</span>
+  </div>
+  <div class="next" (click)="next()">
+    <mat-icon>keyboard_arrow_right</mat-icon>
+  </div>
+</div>

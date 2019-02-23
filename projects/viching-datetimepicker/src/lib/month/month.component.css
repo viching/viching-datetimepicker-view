@@ -1,0 +1,55 @@
+table * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.month{
+  padding: 5px;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.month-tr{
+  height: 40px;
+}
+
+.month-tr .month-col{
+  width: 75px;
+  font-size: 12px;
+  border: 0 none;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.month-inner{
+  width: 90%;
+  height: 90%;
+  line-height: 35px;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-color: transparent;
+  font-size: 12px;
+}
+
+.month-inner:hover{
+  border: 1px solid #c2c2c2;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.active{
+  background-color: #3f51b5!important;
+  color: #fff!important;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 1px #fff;
+}
+
+.current{
+  border: 0 none;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+

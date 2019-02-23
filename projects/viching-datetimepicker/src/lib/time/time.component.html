@@ -1,0 +1,23 @@
+<div class="vi-time-content" (click)="stopBubble($event)">
+  <mat-form-field class="vi-time hour">
+    <mat-select [placeholder]="place[0]" [(value)]="local.hour">
+      <mat-option *ngFor="let cur of hours" [value]="cur">
+        {{cur | pad}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="vi-time minute">
+    <mat-select [placeholder]="place[1]" [(value)]="local.minute">
+      <mat-option *ngFor="let cur of minutes" [value]="cur">
+        {{cur | pad}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="vi-time second">
+    <mat-select [placeholder]="place[2]"[(value)]="local.second">
+      <mat-option *ngFor="let cur of minutes" [value]="cur">
+        {{cur | pad}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

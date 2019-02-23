@@ -1,0 +1,35 @@
+<div class="picker-calendar">
+  <div>
+    <mat-form-field class="full-width">
+      <span matPrefix>
+        <mat-icon fontSet="fa" fontIcon="fa-calendar"></mat-icon>
+        &nbsp;&nbsp;
+      </span>
+      <input
+        matInput
+        #filterInputBox
+        type="text"
+        [value]="now"
+        (click)="show()"
+        class="dateSelect"
+        autocomplete="off"
+        spellcheck="false"
+        autocorrect="off"
+        readonly
+      />
+    </mat-form-field>
+  </div>
+  <div class="calendar-view" [hidden]="!showStatus">
+    <ul class="calendar">
+      <li>
+        <picker-calendar-header [(local)]="local"></picker-calendar-header>
+      </li>
+      <li>
+        <picker-calendar-content [(local)]="local"></picker-calendar-content>
+      </li>
+      <li>
+        <picker-calendar-footer [(local)]="local"></picker-calendar-footer>
+      </li>
+    </ul>
+  </div>
+</div>

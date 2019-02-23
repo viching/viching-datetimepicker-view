@@ -1,0 +1,9 @@
+<table class="week" *ngIf="weekArr && weekArr.length">
+  <tbody>
+  <tr class="week-tr" *ngFor="let row of weekArr">
+    <td class="week-col" *ngFor="let col of row">
+      <div class="week-inner" [ngClass]="{current: col.num == current && col.num != week, active: col.num == week}" (click)="selectWeek(col.num)">{{col.text}}</div>
+    </td>
+  </tr>
+  </tbody>
+</table>

@@ -1,0 +1,27 @@
+.vi-time-content{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: start;
+  flex-wrap: nowrap;
+}
+
+.vi-time-content .vi-time{
+  width: 30px;
+}
+
+.vi-time .mat-select {
+
+}
+.vi-time .mat-select-arrow{
+  width: inherit;
+  height: inherit;
+  border: 0 none;
+}
+.vi-time .mat-select-arrow:after{
+  content: ":";
+}
+
+.second .mat-select-arrow:after{
+  content: "";
+}

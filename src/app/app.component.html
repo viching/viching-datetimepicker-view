@@ -1,0 +1,65 @@
+<ul>
+  <!--<li>
+    <picker-year [year]="'2011'"></picker-year>
+  </li>
+  <li>
+    <picker-month></picker-month>
+  </li>
+  <li>
+    <picker-month-day></picker-month-day>
+  </li>
+  <li>
+    <picker-week></picker-week>
+  </li>
+  <li>
+    <picker-time></picker-time>
+  </li>-->
+  <li>
+    <picker-calendar [(local)]="localTime"></picker-calendar>
+  </li>
+
+</ul>
+<br/>
+
+<!--<ul class="list-inline filter-container list-group">
+  <li class="filter">
+    <mat-form-field>
+      <mat-select [(value)]="selectedOption" (selectionChange)="onFilterChange($event, 'level')">
+        <mat-option *ngFor="let option of options" [value]="option.value"> {{ option.name }} </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </li>
+  <li class="filter">
+    <picker-datetime
+      name="date"
+      [options]="datePickerOptions"
+      [settings]="datePickerSettings"
+      [(dateRangeModel)]="selectedOptions.date"
+      (dateRangeChanged)="onFilterChange($event, 'date')"
+      required
+    >
+    </picker-datetime>
+  </li>
+  <li class="filter date-range">
+    <picker-datetime
+      name="dateRange"
+      [options]="dateRangePickerOptions"
+      [settings]="dateRangePickerSettings"
+      [(dateRangeModel)]="selectedOptions.dateRange"
+      (dateRangeChanged)="onFilterChange($event, 'date-range')"
+      required
+    >
+    </picker-datetime>
+  </li>
+  <li class="filter date-time-range">
+    <picker-datetime
+      name="dateTimeRange"
+      [options]="dateRangePickerOptions"
+      [settings]="dateTimeRangePickerSettings"
+      [(dateRangeModel)]="selectedOptions.dateTimeRange"
+      (dateRangeChanged)="onFilterChange($event, 'date-range')"
+      required
+    >
+    </picker-datetime>
+  </li>
+</ul>-->

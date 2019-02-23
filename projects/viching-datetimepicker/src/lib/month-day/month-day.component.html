@@ -1,0 +1,21 @@
+<table class="month-day">
+  <thead *ngIf="weekDayOptions && weekDayOptions.length">
+  <tr class="month-day-tr">
+    <th class="month-day-col" *ngFor="let wd of weekDayOptions">
+      <div class="month-day-head">
+        {{wd}}
+      </div>
+    </th>
+  </tr>
+  </thead>
+  <tbody *ngIf="dateArr && dateArr.length">
+  <tr class="month-day-tr" *ngFor="let row of dateArr">
+    <td class="month-day-col" *ngFor="let col of row">
+      <div
+        [ngClass]="{'month-day-inner': !!col, 'month-current': current.getFullYear() == local.year && current.getMonth() == local.month && col == current.getDate() && col != local.date, 'month-active': col == local.date}"
+        (click)="selectDay(col)">{{col}}
+      </div>
+    </td>
+  </tr>
+  </tbody>
+</table>

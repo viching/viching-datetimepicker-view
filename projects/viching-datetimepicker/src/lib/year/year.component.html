@@ -1,0 +1,9 @@
+<table class="year" *ngIf="yearArr && yearArr.length">
+  <tbody>
+  <tr class="year-tr" *ngFor="let row of yearArr">
+    <td class="year-col" *ngFor="let col of row">
+      <div class="year-inner" [ngClass]="{current: col == current && col != local?.year, active: col == local?.year}" (click)="selectYear(col)">{{col}}</div>
+    </td>
+  </tr>
+  </tbody>
+</table>

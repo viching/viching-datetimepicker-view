@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+  font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+  font-size: 14px;
+}
+
+
+/*.vi-calendar-foot {
+  position: absolute;
+  !*bottom: -.6em;*!
+  width: 228px;
+}
+.vi-calendar-foot .vi-calendar-foot-content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.vi-calendar-foot .vi-calendar-foot-content li{
+  display: inline-block;
+  flex: 1;
+  list-style-type: none;
+}
+.vi-calendar-foot-content .vi-time{
+  width: 100%;
+}
+.vi-calendar-foot-content .mat-form-field-infix {
+  max-width: 90px;
+}*/
+
+

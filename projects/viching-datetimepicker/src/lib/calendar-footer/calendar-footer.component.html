@@ -1,0 +1,8 @@
+<div class="calendar-foot">
+  <picker-time class="picker-time" *ngIf="local.type == 'datetime'" [(local)]="local"></picker-time>
+  <div class="flex-spacer"></div>
+  <div class="makesure" *ngIf="local.type == local.initType">
+    <button mat-raised-button (click)="reset()">{{button[0]}}</button>
+    <button mat-raised-button (click)="sure()">{{button[1]}}</button>
+  </div>
+</div>

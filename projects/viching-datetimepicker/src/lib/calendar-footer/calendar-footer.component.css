@@ -1,0 +1,29 @@
+.calendar-foot {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: end;
+  flex-wrap: nowrap;
+  padding: 0 12px;
+}
+
+.picker-time{
+  width: 60%;
+}
+
+.flex-spacer{
+  flex-grow: 1;
+}
+
+.makesure {
+  display: flex;
+  flex-direction: row;
+}
+
+.makesure .mat-raised-button{
+  display: inline-block;
+  padding: 0 5px;
+  min-width: 50px;
+  width: 50px;
+  margin: 0 5px;
+}

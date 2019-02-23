@@ -1,0 +1,9 @@
+<table class="month" *ngIf="monthArr && monthArr.length">
+  <tbody>
+  <tr class="month-tr" *ngFor="let row of monthArr">
+    <td class="month-col" *ngFor="let col of row">
+      <div class="month-inner" [ngClass]="{current: local.year == current.getFullYear() && col.num == current.getMonth() && col.num != local.month, active: col.num == local.month}" (click)="selectMonth(col.num)">{{col.text}}</div>
+    </td>
+  </tr>
+  </tbody>
+</table>

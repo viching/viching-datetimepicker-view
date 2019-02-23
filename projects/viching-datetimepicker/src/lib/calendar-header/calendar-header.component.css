@@ -1,0 +1,37 @@
+.calendar-top {
+  text-align: center;
+  width: 100%;
+}
+
+.calendar-header {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+  width: 100%;
+}
+
+.calendar-header .pre {
+  cursor: pointer;
+  line-height: 24px;
+  height: 24px;
+}
+
+.calendar-header .view {
+  flex-grow: 1;
+  text-align: center;
+  line-height: 24px;
+  height: 24px;
+}
+
+.view .vi-year, .view .vi-line, .view .vi-month{
+  cursor: pointer;
+  display: inline-block;
+}
+
+.calendar-header .next {
+  cursor: pointer;
+  line-height: 24px;
+  height: 24px;
+}

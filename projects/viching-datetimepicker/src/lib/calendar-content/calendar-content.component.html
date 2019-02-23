@@ -1,0 +1,5 @@
+<div class="content">
+  <picker-year *ngIf="local.type == 'year'" [(local)]="local"></picker-year>
+  <picker-month *ngIf="local.type == 'month'" [(local)]="local"></picker-month>
+  <picker-month-day *ngIf="local.type == 'date' || local.type == 'datetime'" [(local)]="local"></picker-month-day>
+</div>
